@@ -32,7 +32,12 @@ const Item = (props) => {
   return (
     <div className={classes.itemContainer}>
       <div className={classes.imageContainer}>
-        <img src={props.item.image} width={150} height={150} />
+        <img
+          src={props.item.image}
+          alt="productImage"
+          width={150}
+          height={150}
+        />
       </div>
       <div className={classes.textContainer}>
         <h3>{props.item.title}</h3>

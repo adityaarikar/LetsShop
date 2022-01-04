@@ -6,17 +6,17 @@ const IncrementDecrement = () => {
   const [plusDisable, setPlusDisable] = useState(false);
   const [minusDisable, setMinusDisable] = useState(false);
 
-  let disabled = false;
+  // let disabled = false;
 
   const incrementCounter = () => {
-    if (counter == 5) {
+    if (counter === 5) {
       setPlusDisable(true);
     }
     setCounter(counter + 1);
   };
 
   const decrementCounter = () => {
-    if (counter == 0) {
+    if (counter === 0) {
       setMinusDisable(true);
     }
     setCounter(counter - 1);
@@ -27,7 +27,9 @@ const IncrementDecrement = () => {
       <button className={classes.plus} onClick={incrementCounter}>
         +
       </button>
-      <p className={classes.quantity}>{counter}</p>
+      <p disabled={plusDisable} className={classes.quantity}>
+        {counter}
+      </p>
       <button
         disabled={minusDisable}
         className={classes.minus}

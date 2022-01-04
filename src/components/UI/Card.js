@@ -6,7 +6,11 @@ const Card = (props) => {
   const textTitle = props.item.title.substring(0, 30);
   return (
     <div className={classes.container}>
-      <img src={props.item.image} className={classes.image} />
+      <img
+        src={props.item.image}
+        alt="productImage"
+        className={classes.image}
+      />
       <p className={classes.title}>{textTitle}</p>
       <div className={classes.speci}>
         <p className={classes.price}>{props.item.price}$</p>
