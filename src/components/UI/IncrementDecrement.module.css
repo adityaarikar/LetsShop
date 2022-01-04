@@ -1,0 +1,30 @@
+.container {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  background-color: gray;
+  width: 150px;
+  border-radius: 30px;
+}
+
+.plus {
+  font-weight: bolder;
+  margin-left: 10px;
+  padding: 10px;
+  background: white;
+  cursor: pointer;
+  border-radius: 25px;
+}
+
+.price {
+}
+
+.minus {
+  font-weight: bolder;
+  margin-right: 10px;
+  padding: 10px;
+  background: white;
+  cursor: pointer;
+  border-radius: 25px;
+}

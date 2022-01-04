@@ -1,0 +1,11 @@
+.container {
+  width: 200px;
+  height: 50px;
+  background: black;
+  border-radius: 5px;
+}
+
+.btnTitle {
+  color: white;
+  align-self: center;
+}
