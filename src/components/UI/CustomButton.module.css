@@ -5,6 +5,10 @@
   border-radius: 5px;
 }
 
+.red {
+  background: rgb(179, 26, 26);
+}
+
 .btnTitle {
   color: white;
   align-self: center;

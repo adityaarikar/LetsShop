@@ -15,6 +15,15 @@ export const CartReducer = (state = initialState, action) => {
         ...state,
         items: { ...state.items, [productID]: addedProduct },
       };
+    case actionTypes.REMOVE_FROM_CART:
+      const productToRemove = action.item.id;
+      let updatedCart;
+      updatedCart = { ...state.items };
+      delete updatedCart[productToRemove];
+      return {
+        ...state,
+        items: updatedCart,
+      };
     default:
       return state;
   }
