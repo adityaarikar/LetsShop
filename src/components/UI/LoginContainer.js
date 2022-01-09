@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React from "react";
 import InputContainer from "./InputContainer";
 import classes from "./LoginRegister.module.css";
 
