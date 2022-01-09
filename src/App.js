@@ -9,6 +9,7 @@ import Jewelery from "./components/Pages/Jewelery";
 import Electronics from "./components/Pages/Electronics";
 import Cart from "./components/Pages/Cart";
 import Profile from "./components/Pages/Profile";
+import Footer from "./components/Layout/Footer";
 
 function App() {
   return (
@@ -23,6 +24,7 @@ function App() {
         <Route path="/profile" element={<Profile />} />
         <Route path="/cart" element={<Cart />} />
       </Routes>
+      <Footer />
     </div>
   );
 }

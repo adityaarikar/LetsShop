@@ -14,11 +14,6 @@
   align-items: center;
 }
 
-/* .navLogo {
-  width: 60px;
-  height: 70px;
-} */
-
 .logo {
   cursor: pointer;
 }
@@ -137,6 +132,10 @@
   border-radius: 20px;
 }
 
+.cartBtn h3 {
+  font-family: "Balsamiq Sans", cursive;
+}
+
 .profileCartContainer {
   display: flex;
   flex-direction: row;
@@ -171,13 +170,17 @@
 }
 
 @media screen and (max-width: 767px) {
+  .navContainer {
+    padding: 1rem 2rem;
+  }
+
   .linkContainer {
     flex-direction: column;
-    width: 100%;
+    width: 50%;
     position: absolute;
     background: rgb(165, 165, 165);
     right: 0;
-    top: 60px;
+    top: 5.5rem;
     transition: all 0.5s ease-in-out;
   }
 

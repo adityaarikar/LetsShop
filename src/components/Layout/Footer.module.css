@@ -1,0 +1,34 @@
+.mainContainer {
+  width: 100%;
+  height: auto;
+  background-color: rgb(37, 37, 37);
+}
+
+.container {
+  margin: 0 4rem;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+}
+.containerTwo {
+  background-color: black;
+}
+
+.section {
+}
+.innerSection {
+}
+
+.webTitle {
+  color: white;
+  font-family: "Balsamiq Sans", cursive;
+}
+.logo {
+}
+
+.container p {
+  width: 100%;
+  background-color: black;
+}

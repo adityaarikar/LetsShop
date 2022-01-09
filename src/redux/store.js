@@ -3,9 +3,11 @@ import thunk from "redux-thunk";
 import { composeWithDevTools } from "redux-devtools-extension";
 
 import { CartReducer } from "./reducers/CartReducers";
+import { ProfileReducer } from "./reducers/ProfileReducer";
 
 const reducer = combineReducers({
   cart: CartReducer,
+  profile: ProfileReducer,
 });
 
 const middleware = [thunk];

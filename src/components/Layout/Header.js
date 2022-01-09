@@ -33,31 +33,55 @@ const Header = () => {
           >
             <ul className={classes.link}>
               <li className={classes.liElement}>
-                <NavLink to="/shop/men" className={classes.links}>
+                <NavLink
+                  to="/shop/men"
+                  className={classes.links}
+                  onClick={handleClick}
+                >
                   Men
                 </NavLink>
               </li>
               <li className={classes.liElement}>
-                <NavLink to="/shop/women" className={classes.links}>
+                <NavLink
+                  to="/shop/women"
+                  className={classes.links}
+                  onClick={handleClick}
+                >
                   Women
                 </NavLink>
               </li>
               <li className={classes.liElement}>
-                <NavLink to="/shop/jewelery" className={classes.links}>
+                <NavLink
+                  to="/shop/jewelery"
+                  className={classes.links}
+                  onClick={handleClick}
+                >
                   Jewelery
                 </NavLink>
               </li>
               <li className={classes.liElement}>
-                <NavLink to="/shop/electronics" className={classes.links}>
+                <NavLink
+                  to="/shop/electronics"
+                  className={classes.links}
+                  onClick={handleClick}
+                >
                   Electronics
                 </NavLink>
               </li>
             </ul>
             <div className={classes.profileCartContainer}>
-              <NavLink to="/profile" className={classes.navBtn}>
+              <NavLink
+                to="/profile"
+                className={classes.navBtn}
+                onClick={handleClick}
+              >
                 <FaUserAlt size={25} className={classes.icon} />
               </NavLink>
-              <NavLink to="/cart" className={classes.navBtn}>
+              <NavLink
+                to="/cart"
+                className={classes.navBtn}
+                onClick={handleClick}
+              >
                 <div className={classes.cartContainer}>
                   <div className={classes.cartBtn}>
                     <FaCartArrowDown size={25} className={classes.icon} />

@@ -13,7 +13,6 @@ const Message = () => {
 };
 
 const ShowCart = (props) => {
-  console.log(props);
   return (
     <div className={classes.showCartContainer}>
       <h1>Your Cart</h1>

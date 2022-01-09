@@ -28,7 +28,7 @@ const Women = () => {
           <HashLoader color="#000" loading={loading} size={150} />
         </div>
       ) : (
-        <Product products={products} />
+        <Product products={products} title={"Women's"} />
       )}
     </div>
   );
