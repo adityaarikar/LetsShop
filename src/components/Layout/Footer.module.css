@@ -6,29 +6,84 @@
 
 .container {
   margin: 0 4rem;
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+
+.section {
+  padding: 1rem;
+  box-sizing: border-box;
+  width: 50%;
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
   justify-content: center;
-  align-items: center;
-}
-.containerTwo {
-  background-color: black;
 }
 
-.section {
-}
 .innerSection {
+  /* padding: 0.3rem; */
+  width: 33%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
 }
 
 .webTitle {
+  cursor: pointer;
   color: white;
   font-family: "Balsamiq Sans", cursive;
 }
 .logo {
+  cursor: pointer;
+}
+
+.title {
+  color: white;
+  font-family: "Balsamiq Sans", cursive;
+}
+
+.link {
+  color: white;
+  text-decoration: none;
+  font-family: "Balsamiq Sans", cursive;
 }
 
 .container p {
   width: 100%;
+  color: white;
+  font-family: "Balsamiq Sans", cursive;
+}
+
+.containerTwo {
   background-color: black;
+  padding: 0.7rem;
+}
+
+.containerTwo span {
+  font-family: "Balsamiq Sans", cursive;
+  color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* Tablet */
+@media screen and (min-width: 768px) and (max-width: 1023px) {
+  .section {
+    width: 100%;
+  }
+}
+
+/* smartphone */
+@media screen and (max-width: 767px) {
+  .section {
+    width: 100%;
+  }
+
+  .innerSection {
+    width: 100%;
+  }
 }
